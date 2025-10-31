@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Data and Logs
+*.log
+logs/
+data/*.csv
+data/*.json
+*.db
+*.sqlite3
+
+# Testing
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+
+# Documentation
+docs/_build/
+site/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+api-gateway/bridge/credentials.json
+api-gateway/bridge/secrets/
+core/config/secrets.yml
+core/security/private_keys/
+**/sensitive.yml
+**/confidential.json
+
+# Quantum specific
+quantum-sim/results/
+quantum-sim/cache/
+*.qasm
+*.qiskit_cache/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Package manager
+poetry.lock
+package-lock.json
+yarn.lock
+
+# Local development
+local_settings.py
+local_config.yml
+override.yml

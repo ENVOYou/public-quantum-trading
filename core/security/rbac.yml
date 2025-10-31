@@ -1,0 +1,27 @@
+roles:
+  - name: public_user
+    permissions:
+      - read:docs
+      - read:examples
+      - execute:simulations
+  
+  - name: authenticated_user
+    permissions:
+      - read:market_data
+      - execute:backtests
+      - use:api_gateway
+  
+  - name: developer
+    permissions:
+      - write:examples
+      - write:docs
+      - contribute:code
+
+security_rules:
+  - resource: /api/*
+    roles: [authenticated_user, developer]
+    require_auth: true
+  
+  - resource: /docs/*
+    roles: [public_user]
+    require_auth: false
