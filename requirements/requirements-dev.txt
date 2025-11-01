@@ -1,0 +1,12 @@
+# Menginstal dependensi produksi (docs)
+-r requirements.txt
+
+# Developer tools
+black
+flake8
+isort
+mypy
+pre-commit
+
+# Testing (jika ada tes untuk docs)
+pytest
